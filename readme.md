@@ -2,8 +2,11 @@
 Проект представляет собой ETL-платформу для обработки данных с использованием Apache Spark, Apache Hudi, Apache Iceberg, Apache Airflow и MinIO (S3-совместимое объектное хранилище).
 ## Dataset
 Скачать можно по следующей ссылке:
+
 **https://huggingface.co/datasets/einrafh/hnm-fashion-recommendations-data**
+
 *Примечание: в данном репозитории есть папка с картинками, данную часть необязательно качать, так как в коде она никак не используется*
+
 **Складывать .csv файлы по следующему пути:**
 ```text
 minio/data/bronze-layer/articles/articles.csv
@@ -67,8 +70,10 @@ docker-compose up -d
 ## Описание DAG с Iceberg для данных о зарплатах
 ### `iceberg_salary_dag` - ETL pipeline для анализа зарплат
 ## Dataset
-Скачать можно по следующей ссылке:
+**Скачать можно по следующей ссылке:**
+
 **https://www.kaggle.com/datasets/ayeshasiddiqa123/salary-data**
+
 **Складывать .csv файлы по следующему пути:**
 ```text
 minio/data/bronze-layer/salary_data/salary_data.csv**
