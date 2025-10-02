@@ -1,0 +1,9 @@
+.ipynb_checkpoints/
+__pycache__/
+logs/
+.minio.sys/
+silver-bucket/
+gold-bucket/
+iceberg-warehouse/
+airflow-logs/
+.env
