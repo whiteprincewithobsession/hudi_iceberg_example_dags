@@ -1,5 +1,9 @@
 # Spark + Hudi + Iceberg + Airflow + MinIO
 Проект представляет собой ETL-платформу для обработки данных с использованием Apache Spark, Apache Hudi, Apache Iceberg, Apache Airflow и MinIO (S3-совместимое объектное хранилище).
+## Dataset
+Скачать можно по следующей ссылке:
+**https://huggingface.co/datasets/einrafh/hnm-fashion-recommendations-data**
+*Примечание: в данном репозитории есть папка с картинками, данную часть необязательно качать, так как в коде она никак не используется*
 ## Основные возможности
 - **Многослойная архитектура данных**: Bronze → Silver → Gold
 - **Управление данными**: Apache Hudi для ACID-транзакций и upsert операций
@@ -56,6 +60,9 @@ docker-compose up -d
 
 ## Описание DAG с Iceberg для данных о зарплатах
 ### `iceberg_salary_dag` - ETL pipeline для анализа зарплат
+## Dataset
+Скачать можно по следующей ссылке:
+**https://www.kaggle.com/datasets/ayeshasiddiqa123/salary-data**
 #### Архитектура DAG
 create_buckets → bronze_to_silver → silver_to_gold
 #### Компоненты DAG
