@@ -4,6 +4,11 @@
 Скачать можно по следующей ссылке:
 **https://huggingface.co/datasets/einrafh/hnm-fashion-recommendations-data**
 *Примечание: в данном репозитории есть папка с картинками, данную часть необязательно качать, так как в коде она никак не используется*
+**Складывать .csv файлы по следующему пути:**
+```text
+minio/data/bronze-layer/articles/articles.csv
+minio/data/bronze-layer/customers/customers.csv
+```
 ## Основные возможности
 - **Многослойная архитектура данных**: Bronze → Silver → Gold
 - **Управление данными**: Apache Hudi для ACID-транзакций и upsert операций
@@ -19,6 +24,7 @@ Bronze Layer (Raw) → Silver Layer (Cleaned) → Gold Layer (Aggregated)
 - 10GB+ свободного места на диске
 ## Быстрый старт
 ### Клонирование и настройка
+Желательно перед клонированием репозитория создать в корне репозитория данные папки, если они отсутствуют
 ```bash
 mkdir -p shared_data/hudi_dag minio/data minio/config spark/jars
 ```
@@ -63,6 +69,10 @@ docker-compose up -d
 ## Dataset
 Скачать можно по следующей ссылке:
 **https://www.kaggle.com/datasets/ayeshasiddiqa123/salary-data**
+**Складывать .csv файлы по следующему пути:**
+```text
+minio/data/bronze-layer/salary_data/salary_data.csv**
+```
 #### Архитектура DAG
 create_buckets → bronze_to_silver → silver_to_gold
 #### Компоненты DAG
